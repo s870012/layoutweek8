@@ -1,0 +1,28 @@
+@include lg{
+  .nav-border{
+    border-radius: 100px;
+    box-shadow: 0 2px 40px 0 rgb(0, 104, 255, 10%);
+  }
+}
+
+.w-logo{
+  max-width: 125px;
+}
+@include lg{
+  .w-logo{
+    max-width: 200px;
+  }
+}
+.logo{
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.search{
+  border-radius: 16px;
+}
+
+.dropdown-item{
+  padding: 12px 24px;
+}

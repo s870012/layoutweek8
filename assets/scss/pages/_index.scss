@@ -1,0 +1,96 @@
+.hero{
+  min-height: 400px;
+}
+.hero-flower{
+  display: none;
+}
+@include lg{
+  .hero{
+    border-radius: 80px;
+  }
+  .hero-flower{
+    display: block;
+    z-index: 1000;
+    top: -300px;
+    left: -240px;
+    overflow: hidden;
+  }
+}
+
+//hero-text-position
+.hero-subtitle{
+  color: $primary;
+  background-color: $blue-10;
+  padding: 8px 12px;
+  border-radius: 100px;
+  font-size: 14px;
+}
+.hero-title{
+  position: absolute;
+  top: 309px;
+  left: 16px;
+  right: 16px;
+  z-index: 1000;
+}
+@include sm{
+  .hero-title{
+    right: auto;
+  }
+}
+@include lg{
+  .hero-title{
+    top: 73%;
+    left: 40px;
+  }
+  .hero-link{
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+  }
+}
+
+//hero-swiper-pagination
+.swiper-pagination-bullet{
+  background: $gray-40;
+}
+.swiper-pagination-bullet-active{
+  background: $primary;
+}
+
+//hero-aboutbg
+@include lg{
+  .container-hero{
+    max-width:1600px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+  .swiper-btn{
+    box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 10%);
+    z-index: 1000;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    color: $primary;
+    background-color: $white;
+  }
+}
+
+//donate
+.flower-2{
+  top: 0;
+  left: -100px;
+  max-width: 200px;
+  z-index: -1;
+}
+
+//lesson-list
+::-webkit-scrollbar {
+  display: none;
+}
+@include lg{
+  .lesson-list{
+    white-space: wrap !important;
+  }
+}

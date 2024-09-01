@@ -1,0 +1,14 @@
+.footer-bg{
+  background-color: #282828;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+@include lg{
+  .footer-bg{
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+  }
+}
+.w-logo-white{
+  max-width: 200px;
+}
