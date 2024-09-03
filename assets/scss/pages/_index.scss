@@ -76,6 +76,7 @@
     background-color: $white;
   }
 }
+//hero-end
 
 //donate
 .flower-2{
@@ -83,6 +84,19 @@
   left: -100px;
   max-width: 200px;
   z-index: -1;
+}
+@include lg{
+  .flower-2{
+    max-width: 560px;
+    left: -420px;
+    top: -120px;
+  }
+}
+
+@include lg{
+  .swiper-donate{
+    display: none;
+  }
 }
 
 //lesson-list
@@ -93,4 +107,12 @@
   .lesson-list{
     white-space: wrap !important;
   }
+}
+
+//course-pagination
+.course-pagination-bullet-active{
+  background: $primary;
+}
+.course-pagination-bullet{
+  background: $gray-40;
 }

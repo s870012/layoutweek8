@@ -3,7 +3,16 @@
     color: #d4d4d4;
 }
 
+//bg-color
+.bg-blue-10{
+    background-color: $blue-10;
+}
+
+
 //font-size
+.fs-7{
+    font-size: 14px;
+}
 .fs-12-14{
     font-size: 12px;
 }
@@ -12,6 +21,9 @@
 }
 .fs-14-40{
     font-size: 14px;
+}
+.fs-20-14{
+    font-size: 20px;
 }
 @include lg{
     .fs-12-14{
@@ -23,9 +35,43 @@
     .fs-14-40{
         font-size: 40px;
     }
+    .fs-20-14{
+        font-size: 14px;
+    }
 }
 
 //width
 .w-272{
     width: 272px;
+}
+.w-44{
+    width: 44px;
+}
+
+//card-shadow
+.card-shadow{
+  box-shadow: 0px 25px 50px -12px rgb(0, 0, 0, 12%);  
+}
+
+.card-footer-radius{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+//border、radius
+.course-radius{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+//pill-tag
+.pill-tag{
+    padding: 8px 12px;
+    border-radius: 100px;
+    top: 16px;
+    left: 16px;
+}
+
+.object-fit{
+    object-fit: cover;
 }

@@ -1,3 +1,4 @@
+//hero-swiper
 const swiper = new Swiper(".hero-swiper", {
     pagination: {
         el: ".swiper-pagination",
@@ -24,5 +25,15 @@ const swiper = new Swiper(".hero-swiper", {
     }
   });
   
-  //swiper-lesson-list
-  
+  //swiper-donate
+  const swiper1 = new Swiper(".swiper-donate", {
+    pagination: {
+        el: ".course-pagination",
+        clickable: true
+    },
+    grid: {
+      rows: 1,
+    },
+    slidesPerView: 1,
+    spaceBetween: 24,
+  });
