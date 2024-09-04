@@ -69,11 +69,14 @@
   .swiper-btn{
     box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 10%);
     z-index: 1000;
-    width: 56px;
-    height: 56px;
+    padding: 16px 20px;
     border-radius: 16px;
     color: $primary;
     background-color: $white;
+    &:hover{
+      background-color: $primary;
+      color: $white;
+    }
   }
 }
 //hero-end
@@ -109,10 +112,19 @@
   }
 }
 
-//course-pagination
-.course-pagination-bullet-active{
-  background: $primary;
+//toplist
+.toplist-bg{
+  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+  z-index: -1000;
 }
-.course-pagination-bullet{
-  background: $gray-40;
+
+.flower-1{
+  max-width: 60px;
+  top: -24px;
+  left: -24px;
+  z-index: -1;
+}
+.flower-3{
+  top: 214px;
+  left: -240px;
 }

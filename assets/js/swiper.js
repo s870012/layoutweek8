@@ -28,7 +28,7 @@ const swiper = new Swiper(".hero-swiper", {
   //swiper-donate
   const swiper1 = new Swiper(".swiper-donate", {
     pagination: {
-        el: ".course-pagination",
+        el: ".swiper-pagination",
         clickable: true
     },
     grid: {
@@ -36,4 +36,29 @@ const swiper = new Swiper(".hero-swiper", {
     },
     slidesPerView: 1,
     spaceBetween: 24,
+  });
+
+  //swiper-toplist
+  const swiper2 = new Swiper(".swiper-toplist", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    },
+    grid: {
+      rows: 1,
+    },
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+      992: {      
+        grid: { 
+          rows: 1,
+        },
+        slidesPerView: 4,
+        navigation: {
+            nextEl: ".swiper-next-btn",
+            prevEl: ".swiper-prev-btn",
+          }
+      }
+    }
   });
