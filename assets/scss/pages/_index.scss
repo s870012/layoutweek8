@@ -114,10 +114,17 @@
 
 //toplist
 .toplist-bg{
-  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
-  z-index: -1000;
+  background-color:#F0F6FF;
 }
-
+.container-buy{
+  max-width: 1352px;
+  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.look{
+  z-index: 1000;
+}
 .flower-1{
   max-width: 60px;
   top: -24px;
@@ -132,7 +139,14 @@
 //catalog
 .catalog-container{
   max-width: 1656px;
-  margin: 0 auto;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 80px;
+}
+@include lg{
+  .catalog-container{
+    margin: 0 auto;
+  }
 }
 .catalog-bg{
   background-color: $primary;
@@ -140,4 +154,31 @@
 .polygon-1{
   max-width: 80px;
   height: 80px;
+}
+
+//teacher
+.teacher-bg{
+  background-image: url("/assets/images/deco/line-1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.teacher-box{
+  max-width: 351px;
+  height: 605px;
+}
+@include lg{
+  .teacher-box{
+    max-width: 416px;
+    height: 617px;
+  }
+}
+
+.namecard-h{
+  height: 305px;
+}
+@include lg{
+  .namecard-h{
+    height: 317px;
+  }
 }

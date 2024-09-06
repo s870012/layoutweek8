@@ -56,9 +56,9 @@ const swiper2 = new Swiper(".swiper-toplist", {
       },
       slidesPerView: 4,
       navigation: {
-          nextEl: ".swiper-next-btn",
-          prevEl: ".swiper-prev-btn",
-        }
+        nextEl: ".swiper-next-btn",
+        prevEl: ".swiper-prev-btn",
+      }
     }
   }
 });
@@ -70,15 +70,42 @@ const swiper3 = new Swiper(".swiper-catalog", {
       clickable: true
   },
   grid: {
+    fill:"row",
     rows: 2,
   },
+  spaceBetween: 24,
   breakpoints: {
     992: {      
       grid: { 
-        rows: 2,
+        rows: 4,
       },
       slidesPerView: 2,
-      spaceBetween: 24,
+    }
+  }
+});
+
+//teacher
+const swiper4 = new Swiper(".swiper-teacher", {
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+  },
+  grid: {
+    rows: 1,
+  },
+  spaceBetween: 24,
+  breakpoints: {
+    767: {      
+      grid: { 
+        rows: 1,
+      },
+      slidesPerView: 2,
+    },
+    1200: {      
+      grid: { 
+        rows: 1,
+      },
+      slidesPerView: 3,
     }
   }
 });

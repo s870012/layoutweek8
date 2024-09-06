@@ -19,8 +19,26 @@
 .bg-gray-40{
     background-color: $gray-40;
 }
-.bg-orange{
+.bg-orange-ff{
     background-color: #ff994f;
+}
+.bg-gray-5e{
+    background-color: #5e5e5e;
+}
+.bg-red-ff{
+    background-color: #ff9bad;
+}
+.bg-blue-ff{
+    background-color: #564ffd;
+}
+.bg-blue-54d{
+    background-color: #54dff2;
+}
+.bg-green-52e{
+    background-color: #52e9bc;
+}
+.bg-purple-ff{
+    background-color: #cf93ff;
 }
 
 //font-size
@@ -59,7 +77,7 @@
     padding-right: -28px;
 }
 
-//width
+//width、height
 .w-272{
     width: 272px;
 }
@@ -96,6 +114,19 @@
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 12%);
+    max-width: 272px;
+}
+.namecard-border{
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 12%);
+    top: 300px;
+    z-index: 1000;
+}
+
+@include lg{
+    .capsule{
+        max-width: 306px;
+    }
 }
 .capsule-inside{
     width: 64px;
