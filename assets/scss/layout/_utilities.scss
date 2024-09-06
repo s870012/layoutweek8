@@ -2,6 +2,12 @@
 .text-d4{
     color: #d4d4d4;
 }
+.text-gray-lesson{
+    color: #6E7485;
+}
+.text-black-lesson{
+    color: #1D2026;
+}
 
 //bg-color
 .bg-blue-10{
@@ -13,7 +19,9 @@
 .bg-gray-40{
     background-color: $gray-40;
 }
-
+.bg-orange{
+    background-color: #ff994f;
+}
 
 //font-size
 .fs-8{
@@ -83,6 +91,16 @@
 .pill-tag-sm{
     padding: 4px 12px;
     border-radius: 100px;
+}
+.capsule{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 12%);
+}
+.capsule-inside{
+    width: 64px;
+    padding: 16px;
+    border-radius: 16px;
 }
 
 //position
