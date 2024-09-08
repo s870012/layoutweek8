@@ -109,3 +109,34 @@ const swiper4 = new Swiper(".swiper-teacher", {
     }
   }
 });
+
+const swiper5 = new Swiper(".swiper-course", {
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+  },
+  grid: {
+    rows: 1,
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  slidesPerView: 1.5, 
+  spaceBetween: 0,
+  breakpoints: {
+    576: {      
+      grid: { 
+        rows: 1,
+      },
+      slidesPerView: 3,
+    },
+    992: {      
+      grid: { 
+        rows: 1,
+      },
+      slidesPerView: 6,
+      spaceBetween: 16,
+    }
+  }
+});

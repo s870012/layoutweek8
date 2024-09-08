@@ -8,6 +8,12 @@
 .text-black-lesson{
     color: #1D2026;
 }
+.text-gray-100{
+    color: #1d2026;
+}
+.text-gray{
+    color: #808080;
+}
 
 //bg-color
 .bg-blue-10{
@@ -45,6 +51,9 @@
 .fs-8{
     font-size: 14px;
 }
+.fs-9{
+    font-size: 12px;
+}
 .fs-12-14{
     font-size: 12px;
 }
@@ -54,8 +63,23 @@
 .fs-14-40{
     font-size: 14px;
 }
+.fs-16-20{
+    font-size: 16px;
+}
+.fs-16-32{
+    font-size: 16px;
+}
 .fs-20-14{
     font-size: 20px;
+}
+.fs-20-32{
+    font-size: 20px;
+}
+.fs-24-40{
+    font-size: 24px;
+}
+.fs-32-48{
+    font-size: 32px;
 }
 @include lg{
     .fs-12-14{
@@ -67,8 +91,23 @@
     .fs-14-40{
         font-size: 40px;
     }
+    .fs-16-20{
+        font-size: 20px;
+    }
+    .fs-16-32{
+        font-size: 32px;
+    }
     .fs-20-14{
         font-size: 14px;
+    }
+    .fs-20-32{
+        font-size: 32px;
+    }
+    .fs-24-40{
+        font-size: 40px;
+    }
+    .fs-32-48{
+        font-size: 48px;
     }
 }
 //padding
@@ -84,24 +123,76 @@
 .w-44{
     width: 44px;
 }
+.w-page{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@include md{
+    .w-page{
+        width: 48px;
+        height: 48px;
+    }
+}
+.w-100p{
+    max-width: auto;
+    width: 100px;
+    height: 100px;
+}
+@include md{
+    .w-100p{
+        width: 100%;
+        height: auto;
+    }
+}
 
 //card-shadow
 .card-shadow{
   box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 12%);  
 }
-
+@include md{
+    .card-shadow-md{
+        box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 12%);
+    }
+}
 .card-footer-radius{
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 //border、radius
 .course-radius{
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.search-radius{
+    border-radius: 1rem;
+}
+@include md{
+    .search-radius{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+@include md{
+    .rounded-md{
+        border-radius: 1rem !important;
+    }
+
+}
+.border-b{
+    border: 0;
+    border-bottom: 1px solid #ececec !important;
+}
+@include md{
+    .border-b{
+        border: 0 !important;
+    }
 }
 
-//pill-tag
+//btn
 .pill-tag{
     padding: 8px 12px;
     border-radius: 100px;
@@ -133,13 +224,84 @@
     padding: 16px;
     border-radius: 16px;
 }
+.btn-course{
+    width: 196px;
+    padding: 24px 0;
+}
 
 //position
 .tag-position{
     top: 16px;
     left: 16px;
 }
-
+.tag-position-search{
+    top: 4px;
+    left: 4px;
+}
+@include lg{
+    .tag-position-search{
+        top: 16px;
+        left: 16px;
+    }
+}
 .object-fit{
     object-fit: cover;
+}
+
+//hover
+.hover-primary{
+    cursor: pointer;
+    &:hover{
+        color: $white;
+        background-color: $primary;
+    }
+}
+.hover-primary-underline{
+    cursor: pointer;
+    &:hover{
+        color: $primary;
+        border-bottom: 4px solid $primary;
+        font-weight: 600;
+    }
+}
+.hover-primary-text:hover{
+    color: $primary;
+}
+
+//container
+.container-buy{
+    max-width: 1352px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+@include lg{
+    .container-buy{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+//swiper
+//swiper-pagination
+.swiper-pagination-bullet{
+    background: $gray-40;
+}
+.swiper-pagination-bullet-active{
+    background: $primary;
+}
+
+@include lg{
+    .swiper-btn{
+        box-shadow: 0 10px 15px -3px rgb(0, 0, 0, 10%);
+        z-index: 1000;
+        padding: 16px 20px;
+        border-radius: 16px;
+        color: $primary;
+        background-color: $white;
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
 }
